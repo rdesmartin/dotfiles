@@ -1,0 +1,139 @@
+1644355546314	FirefoxAccounts	DEBUG	FxAccountsWebChannel registered: account_updates with origin https://accounts.firefox.com
+1644355546373	FirefoxAccounts	TRACE	initializing new storage manager
+1644355546373	FirefoxAccounts	TRACE	starting fetch of json user data
+1644355546374	FirefoxAccounts	TRACE	finished fetch of json user data - took: 1
+1644355546374	FirefoxAccounts	DEBUG	reading secure storage with existing: []
+1644355546374	FirefoxAccounts	TRACE	starting fetch of user data from the login manager
+1644355546375	FirefoxAccounts	DEBUG	secure read fetched items: ["keyFetchToken","unwrapBKey"]
+1644355546375	FirefoxAccounts	TRACE	initializing of new storage manager done
+1644355546375	FirefoxAccounts	DEBUG	startVerifiedCheck: false
+1644355546376	FirefoxAccounts	DEBUG	whenVerified promise starts polling for verified email
+1644355546376	FirefoxAccounts	DEBUG	entering startPollEmailStatus: start
+1644355546376	FirefoxAccounts	DEBUG	entering pollEmailStatus: start
+1644355546377	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Initialized
+1644355546378	FirefoxAccounts	DEBUG	entering startPollEmailStatus: browser-startup
+1644355546378	FirefoxAccounts	DEBUG	entering pollEmailStatus: browser-startup
+1644355546378	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1644355546378	FirefoxAccounts	DEBUG	getOAuthToken enter
+1644355546378	FirefoxAccounts	ERROR	FxA rejecting with error UNVERIFIED_ACCOUNT, details: undefined
+1644355546378	FirefoxAccounts	ERROR	Background refresh of initial profile failed: Error: UNVERIFIED_ACCOUNT(resource://gre/modules/FxAccounts.jsm:1529:18) JS Stack trace: _error@FxAccounts.jsm:1529:18
+withSessionToken@FxAccounts.jsm:788:18
+1644355546383	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/recovery_email/status?reason=start
+1644355546384	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/recovery_email/status?reason=browser-startup
+1644355547089	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/recovery_email/status?reason=browser-startup 200
+1644355547089	Hawk	DEBUG	(Response) /recovery_email/status?reason=browser-startup: code: 200 - Status text: OK
+1644355547089	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -89
+1644355547089	FirefoxAccounts	DEBUG	checkEmailStatus -> {"email":"rdesmartin@gmail.com","verified":false,"sessionVerified":false,"emailVerified":true}
+1644355547089	FirefoxAccounts	DEBUG	polling with timeout = 300000
+1644355547090	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/recovery_email/status?reason=start 200
+1644355547090	Hawk	DEBUG	(Response) /recovery_email/status?reason=start: code: 200 - Status text: OK
+1644355547090	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -90
+1644355547090	FirefoxAccounts	DEBUG	checkEmailStatus -> {"email":"rdesmartin@gmail.com","verified":false,"sessionVerified":false,"emailVerified":true}
+1644355547090	FirefoxAccounts	DEBUG	polling with timeout = 60000
+1644355555778	Sync.Status	INFO	Resetting Status.
+1644355555778	Sync.Status	DEBUG	Status.service: undefined => success.status_ok
+1644355555789	Sync.SyncScheduler	TRACE	Setting SyncScheduler policy values to defaults.
+1644355555789	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1644355555790	Sync.Service	INFO	Loading Weave 1.98.0
+1644355555791	Sync.Engine.Clients	DEBUG	Engine constructed
+1644355555792	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1644355555795	Sync.Engine.Addons	DEBUG	Engine constructed
+1644355555825	Sync.Engine.Addons	DEBUG	SyncEngine initialized: addons
+1644355555828	Sync.Engine.Bookmarks	DEBUG	Engine constructed
+1644355555830	Sync.Engine.Bookmarks	DEBUG	SyncEngine initialized: bookmarks
+1644355555831	Sync.Engine.Forms	DEBUG	Engine constructed
+1644355555832	Sync.Engine.Forms	DEBUG	SyncEngine initialized: forms
+1644355555833	Sync.Engine.History	DEBUG	Engine constructed
+1644355555835	Sync.Engine.History	DEBUG	SyncEngine initialized: history
+1644355555836	Sync.Engine.Passwords	DEBUG	Engine constructed
+1644355555847	Sync.Engine.Passwords	DEBUG	SyncEngine initialized: passwords
+1644355555847	Sync.Engine.Prefs	DEBUG	Engine constructed
+1644355555848	Sync.Engine.Prefs	DEBUG	SyncEngine initialized: prefs
+1644355555848	Sync.Engine.Tabs	DEBUG	Engine constructed
+1644355555849	Sync.Engine.Tabs	DEBUG	SyncEngine initialized: tabs
+1644355555849	Sync.Engine.Tabs	DEBUG	Resetting tabs last sync time
+1644355555850	Sync.Engine.CreditCards	DEBUG	Engine constructed
+1644355555850	Sync.Engine.CreditCards	DEBUG	SyncEngine initialized: creditcards
+1644355555851	Sync.Engine.Extension-Storage	DEBUG	Engine constructed
+1644355555852	Sync.Engine.Extension-Storage	DEBUG	SyncEngine initialized: extension-storage
+1644355555852	Sync.Service	INFO	Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+1644355555852	Sync.AddonsReconciler	INFO	Registering as Add-on Manager listener.
+1644355555852	Sync.AddonsReconciler	DEBUG	Adding change listener.
+1644355555852	Sync.Engine.History.Tracker	INFO	Adding Places observer.
+1644355555854	FirefoxAccounts	DEBUG	startVerifiedCheck: false
+1644355555854	FirefoxAccounts	INFO	Generating and persisting encrypted sendtab keys
+1644355555855	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1644355555855	FirefoxAccounts	DEBUG	getOAuthToken enter
+1644355555855	FirefoxAccounts	INFO	Can't get keys; user is not verified
+1644355555855	FirefoxAccounts	ERROR	FxA rejecting with error UNVERIFIED_ACCOUNT, details: undefined
+1644355555855	FirefoxAccounts	INFO	Can't fetch keys, so unable to determine sendtab keys
+1644355555855	FirefoxAccounts	ERROR	Background refresh of initial profile failed: Error: UNVERIFIED_ACCOUNT(resource://gre/modules/FxAccounts.jsm:1529:18) JS Stack trace: _error@FxAccounts.jsm:1529:18
+withSessionToken@FxAccounts.jsm:788:18
+1644355555961	Sync.RemoteTabs	INFO	Generating tab list with filter
+1644355555961	Sync.RemoteTabs	INFO	Final tab list has 0 clients with 0 tabs.
+1644355557938	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1644355566855	Sync.SyncScheduler	DEBUG	Next sync in 3590145 ms. (why=startup)
+1644355607091	FirefoxAccounts	DEBUG	entering pollEmailStatus: start
+1644355607094	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/recovery_email/status?reason=start
+1644355607325	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/recovery_email/status?reason=start 200
+1644355607325	Hawk	DEBUG	(Response) /recovery_email/status?reason=start: code: 200 - Status text: OK
+1644355607325	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -325
+1644355607326	FirefoxAccounts	DEBUG	checkEmailStatus -> {"email":"rdesmartin@gmail.com","verified":false,"sessionVerified":false,"emailVerified":true}
+1644355607326	FirefoxAccounts	DEBUG	polling with timeout = 60000
+1644355667326	FirefoxAccounts	DEBUG	entering pollEmailStatus: start
+1644355667328	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/recovery_email/status?reason=start
+1644355667490	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/recovery_email/status?reason=start 200
+1644355667490	Hawk	DEBUG	(Response) /recovery_email/status?reason=start: code: 200 - Status text: OK
+1644355667490	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -490
+1644355667491	FirefoxAccounts	DEBUG	checkEmailStatus -> {"email":"rdesmartin@gmail.com","verified":false,"sessionVerified":false,"emailVerified":true}
+1644355667491	FirefoxAccounts	DEBUG	polling with timeout = 60000
+1644355727491	FirefoxAccounts	DEBUG	entering pollEmailStatus: start
+1644355727494	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/recovery_email/status?reason=start
+1644355728378	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/recovery_email/status?reason=start 200
+1644355728378	Hawk	DEBUG	(Response) /recovery_email/status?reason=start: code: 200 - Status text: OK
+1644355728379	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -379
+1644355728379	FirefoxAccounts	DEBUG	checkEmailStatus -> {"email":"rdesmartin@gmail.com","verified":false,"sessionVerified":false,"emailVerified":true}
+1644355728379	FirefoxAccounts	DEBUG	polling with timeout = 60000
+1644355788379	FirefoxAccounts	DEBUG	entering pollEmailStatus: start
+1644355788383	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/recovery_email/status?reason=start
+1644355789188	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/recovery_email/status?reason=start 200
+1644355789188	Hawk	DEBUG	(Response) /recovery_email/status?reason=start: code: 200 - Status text: OK
+1644355789188	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -188
+1644355789188	FirefoxAccounts	DEBUG	checkEmailStatus -> {"email":"rdesmartin@gmail.com","verified":false,"sessionVerified":false,"emailVerified":true}
+1644355789188	FirefoxAccounts	DEBUG	polling with timeout = 300000
+1644355847090	FirefoxAccounts	DEBUG	entering pollEmailStatus: browser-startup
+1644355847092	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/recovery_email/status?reason=browser-startup
+1644355847351	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/recovery_email/status?reason=browser-startup 200
+1644355847352	Hawk	DEBUG	(Response) /recovery_email/status?reason=browser-startup: code: 200 - Status text: OK
+1644355847352	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -352
+1644355847352	FirefoxAccounts	DEBUG	checkEmailStatus -> {"email":"rdesmartin@gmail.com","verified":false,"sessionVerified":false,"emailVerified":true}
+1644355847352	FirefoxAccounts	DEBUG	polling with timeout = 300000
+1644356089189	FirefoxAccounts	DEBUG	entering pollEmailStatus: start
+1644356089192	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/recovery_email/status?reason=start
+1644356090043	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/recovery_email/status?reason=start 200
+1644356090043	Hawk	DEBUG	(Response) /recovery_email/status?reason=start: code: 200 - Status text: OK
+1644356090044	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -1044
+1644356090044	FirefoxAccounts	DEBUG	checkEmailStatus -> {"email":"rdesmartin@gmail.com","verified":false,"sessionVerified":false,"emailVerified":true}
+1644356090044	FirefoxAccounts	DEBUG	polling with timeout = 300000
+1644356122079	Sync.RemoteTabs	INFO	Doing a tab sync.
+1644356122079	Sync.Service	DEBUG	User-Agent: Firefox/96.0 (Linux x86_64) FxSync/1.98.0.20220106144528.desktop
+1644356122079	Sync.Service	INFO	Starting sync at 2022-02-08 22:35:22 in browser session zdZZtoQg7fkb
+1644356122080	Sync.Service	DEBUG	In sync: should login.
+1644356122080	Sync.Service	INFO	User logged in successfully - verifying login.
+1644356122080	Sync.RemoteTabs	INFO	Generating tab list with filter
+1644356122080	Sync.RemoteTabs	INFO	Final tab list has 0 clients with 0 tabs.
+1644356122080	FirefoxAccounts	DEBUG	startVerifiedCheck: false
+1644356122093	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1644356122093	FirefoxAccounts	DEBUG	getOAuthToken enter
+1644356122093	Sync.SyncAuthManager	DEBUG	unlockAndVerifyAuthState has an unverified user
+1644356122093	Sync.Status	DEBUG	Status.login: success.login => error.login.reason.account
+1644356122093	Sync.Status	DEBUG	Status.service: success.status_ok => error.login.failed
+1644356122093	Sync.Service	DEBUG	Fetching unlocked auth state returned error.login.reason.account
+1644356122093	Sync.ErrorHandler	ERROR	Sync encountered a login error
+1644356122094	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1644356122095	Sync.Service	DEBUG	Exception calling WrappedLock: Error: Login failed: error.login.reason.account(resource://services-sync/service.js:1038:15) JS Stack trace: onNotify@service.js:1038:15
+1644356122096	FirefoxAccounts	ERROR	FxA rejecting with error UNVERIFIED_ACCOUNT, details: undefined
+1644356122096	Sync.Service	DEBUG	Not syncing: login returned false.
+1644356122096	FirefoxAccounts	DEBUG	startVerifiedCheck: false
+1644356122096	FirefoxAccounts	ERROR	Background refresh of initial profile failed: Error: UNVERIFIED_ACCOUNT(resource://gre/modules/FxAccounts.jsm:1529:18) JS Stack trace: _error@FxAccounts.jsm:1529:18
+withSessionToken@FxAccounts.jsm:788:18

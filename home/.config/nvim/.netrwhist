@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/auke'
+let g:netrw_dirhist_2='/home/auke/projects/afstuderen/research'
+let g:netrw_dirhist_3='/home/auke/projects/afstuderen/report/onderzoek'
+let g:netrw_dirhist_4='/home/auke/projects/go/src/gitlab.advancedclimate.com/rio/rp-tank/build'

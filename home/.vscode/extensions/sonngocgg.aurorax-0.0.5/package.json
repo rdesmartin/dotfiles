@@ -1,0 +1,41 @@
+{
+	"name": "aurorax",
+	"displayName": "AuroraX",
+	"description": "A simple dark theme based on Nord",
+	"version": "0.0.5",
+	"engines": {
+		"vscode": "^1.52.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"author": {
+		"name": "sonngocgg"
+	},
+	"publisher": "sonngocgg",
+	"keywords": [
+		"AuroraX",
+		"Aurora",
+		"Aurora Theme",
+		"Dark Theme"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "AuroraX",
+				"uiTheme": "vs-dark",
+				"path": "./themes/AuroraX-color-theme.json"
+			}
+		]
+	},
+	"repository": {
+		"url": "https://github.com/sonngocgg/AuroraX"
+	},
+	"__metadata": {
+		"id": "8565dbce-e116-4206-8a49-1dc6dcc02c92",
+		"publisherId": "83304e0d-1029-48f4-8c07-5e6a6f0e7d4b",
+		"publisherDisplayName": "sonngocgg",
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1644163021636
+	}
+}

@@ -1,0 +1,20 @@
+[user]
+	name = remi
+	email = rhd2000@hw.ac.uk
+[alias]
+    unadd = reset
+    st = status
+    co = checkout
+    cm = commit
+    fa = fetch --all --tags --prune
+    l = log --graph --pretty=format:\"%C(blue)%h%C(yellow)%d %C(green)%cn%Creset %s %C(blue)(%cr)%Creset\"
+    la = log --graph --pretty=format:\"%C(blue)%h%C(yellow)%d %C(green)%cn %Creset%s %C(blue)(%cr)%Creset\" --all
+    follog = log --name-status --follow
+
+[core]
+    editor = vim
+[credential]
+    helper = keychain
+
+[push]
+    default = current
