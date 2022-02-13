@@ -15,7 +15,8 @@ fi
 source $HOMESHICK_DIR/homeshick.sh
 
 # Get dotfiles
-homeshick --batch clone git@github.com:rdesmartin/dotfiles.git
+# homeshick --batch clone git@github.com:rdesmartin/dotfiles.git
+homeshick --batch clone https://github.com/rdesmartin/dotfiles.git
 homeshick link --force
 
 # Get FZF and install it.
